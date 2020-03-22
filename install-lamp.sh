@@ -42,5 +42,11 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
 sudo composer global require laravel/envoy
 sudo chmod +x ~/.composer/vendor/bin/envoy
-sudo ln -s ~/.composer/vendor/bin/envoy /usr/bin/envoy
+sudo ln -s ~/.composer/vendor/bin/envoy /usr/local/bin/envoy
 envoy
+
+sudo apt install -y wget
+cd /usr/local/bin
+sudo wget -O virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh
+sudo chmod +x virtualhost
+cd ~
