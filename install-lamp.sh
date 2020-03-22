@@ -14,7 +14,7 @@ sudo apt install -y apache2
 sudo apt install -y mariadb-server
 
 sudo apt install -y libapache2-mod-php7.4 php-mysql
-sudo apt install -y php-curl php-json php-cgi php-gd php-zip php-mbstring php-xml php-xmlrpc php-soap
+sudo apt install -y php-curl php-json php-cgi php-gd php-zip php-mbstring php-xml php-xmlrpc php-soap php-imagick php-intl
 sudo apt install -y phpmyadmin
 
 sudo a2enmod rewrite
