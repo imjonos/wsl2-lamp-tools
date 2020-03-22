@@ -10,9 +10,6 @@ sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 
-#sudo apt install -y php7.4
-#php -v
-
 sudo apt install -y apache2
 sudo apt install -y mariadb-server
 
