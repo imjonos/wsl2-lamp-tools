@@ -13,3 +13,16 @@ $ wget -O install-lamp https://raw.githubusercontent.com/imjonos/lamp-tools/mast
 $ chmod +x install-lamp
 
 $ install-lamp
+
+# init-laravel.sh
+This script is used for Init fresh Laravel App.
+
+# How to use
+
+$ cd ~
+
+$ wget -O /usr/local/bin/init-laravel https://raw.githubusercontent.com/imjonos/lamp-tools/master/init-laravel.sh
+
+$ chmod +x /usr/local/bin/install-lamp
+
+$ init-laravel
