@@ -4,7 +4,7 @@ Sripts for install and manage LAMP on Ubuntu.
 # install-lamp.sh
 Apache, PHP7.4, MariaDB, Redis, laravel-echo-server, nodejs, npm, envoy, composer, Virtualhost Manage Script (https://github.com/RoverWire/virtualhost)
 
-# How to use
+#How to use
 
 $ cd ~
 
@@ -17,7 +17,7 @@ $ install-lamp
 # init-laravel.sh
 This script is used for Init fresh Laravel App.
 
-# How to use
+#How to use
 
 $ cd ~
 
