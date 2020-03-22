@@ -1,4 +1,4 @@
-# lamp-tools
+# LAMP Tools
 Sripts for install  and manage LAMP on Ubuntu
 
 # install-lamp.sh
