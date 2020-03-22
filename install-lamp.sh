@@ -1,4 +1,7 @@
 #!/bin/bash
+# This script is used for Install LAMP on Ubuntu.
+# Created by Eugeny Nosenko https://coders.studio
+# Feel free to modify it
 
 sudo apt update
 sudo apt upgrade
