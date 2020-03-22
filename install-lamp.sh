@@ -14,8 +14,6 @@ sudo add-apt-repository "deb [arch=amd64,arm64,ppc64el] http://mariadb.mirror.li
 
 sudo apt update
 
-
-
 sudo apt install -y apache2
 sudo apt install -y mariadb-server
 
