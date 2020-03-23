@@ -23,6 +23,6 @@ $ cd ~
 
 $ wget -O /usr/local/bin/init-laravel https://raw.githubusercontent.com/imjonos/lamp-tools/master/init-laravel.sh
 
-$ chmod +x /usr/local/bin/install-lamp
+$ chmod +x /usr/local/bin/init-laravel
 
 $ init-laravel
