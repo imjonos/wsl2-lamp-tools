@@ -4,7 +4,7 @@
 # Feel free to modify it
 
 #Add your hosts
-hosts=( "wsl2", "test.com", "test2.com" )
+hosts=( "wsl2" "tsm2" "skladno" )
 
 export WINIP=$(cat /etc/resolv.conf | grep 'nameserver' | cut -f 2 -d ' ')
 export WSLIP=$(ip addr show eth0 | grep 'inet ' | cut -f 6 -d ' ' | cut -f 1 -d '/')
@@ -15,10 +15,10 @@ do
     if grep $host /mnt/c/Windows/System32/drivers/etc/hosts
     then
         cp /mnt/c/Windows/System32/drivers/etc/hosts /tmp/hosts
-        sed -i "s/.*$host/$WSLIP  $host/" /tmp/hosts
+        sed -i "s/.*$host/$WSLIP        $host/" /tmp/hosts
         cat /tmp/hosts > /mnt/c/Windows/System32/drivers/etc/hosts
     else
-        echo "$WSLIP  $host\n" >> /mnt/c/Windows/System32/drivers/etc/hosts
+        echo "$WSLIP    $host" >> /mnt/c/Windows/System32/drivers/etc/hosts
     fi
 done
 
@@ -29,9 +29,9 @@ then
     sed -i "s/.*winhost/$WINIP  winhost/" /tmp/hosts
     cat /tmp/hosts > /mnt/c/Windows/System32/drivers/etc/hosts
 else
-    echo "$WINIP  winhost\n" >> /mnt/c/Windows/System32/drivers/etc/hosts
+    echo "$WINIP        winhost" >> /mnt/c/Windows/System32/drivers/etc/hosts
 fi
 
 cat /mnt/c/Windows/System32/drivers/etc/hosts
 sudo cp /mnt/c/Windows/System32/drivers/etc/hosts /etc/hosts
-echo "DONE!\n"
+echo "DONE!"
