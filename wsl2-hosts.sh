@@ -4,7 +4,7 @@
 # Feel free to modify it
 
 #Add your hosts
-hosts=( "wsl2" "tsm2" "skladno" )
+hosts=( "wsl2" "host1" "host2" )
 
 export WINIP=$(cat /etc/resolv.conf | grep 'nameserver' | cut -f 2 -d ' ')
 export WSLIP=$(ip addr show eth0 | grep 'inet ' | cut -f 6 -d ' ' | cut -f 1 -d '/')
